@@ -131,6 +131,7 @@ header >nav >a:hover{
     color:#A52A2A;
     font-size: 48px;
     position: relative;
+    text-shadow:3px 3px #cccccc;"
     
 }
 
@@ -151,8 +152,12 @@ header >nav >a:hover{
     height: 360px;
     object-fit: cover;
     margin: 15px 50px;
+    box-shadow:5px 5px gray; 
 }
-                       
+#about img :hover{
+    
+   border-radius:20%  
+}                   
 #about .icon img{
     width: 60px;
     height: 60px;
@@ -163,6 +168,9 @@ header >nav >a:hover{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+}
+#backpic{
+    box-shadow:3px 5px gray;
 }
 #about .right{
     display: flex;
@@ -177,6 +185,7 @@ header >nav >a:hover{
     color:#333;
     line-height: 1.6;
     font-weight: 600;
+    text-shadow:2px 2px #FFEBCD;
 }
 
 #background{
