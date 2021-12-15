@@ -131,7 +131,6 @@ header >nav >a:hover{
     color:#A52A2A;
     font-size: 48px;
     position: relative;
-    text-shadow:3px 3px #cccccc;"
     
 }
 
@@ -152,12 +151,9 @@ header >nav >a:hover{
     height: 360px;
     object-fit: cover;
     margin: 15px 50px;
-    box-shadow:5px 5px gray; 
+    box-shadow:3px 3px gray;
 }
-#about img :hover{
-    
-   border-radius:20%  
-}                   
+             
 #about .icon img{
     width: 60px;
     height: 60px;
@@ -168,9 +164,7 @@ header >nav >a:hover{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-}
-#backpic{
-    box-shadow:3px 5px gray;
+    
 }
 #about .right{
     display: flex;
@@ -182,10 +176,10 @@ header >nav >a:hover{
     width: 520px;
     margin: 15px 50px;
     font-size: 18px;
-    color:#333;
+    color:#BC8F8F;
     line-height: 1.6;
     font-weight: 600;
-    text-shadow:2px 2px #FFEBCD;
+    text-shadow: 1px 1px #333;
 }
 
 #background{
@@ -195,6 +189,7 @@ header >nav >a:hover{
     width: 600px;
     height: 350px;
     object-fit: cover;
+    transform:translateX(-200px);
 }
 #background p{
     width: 300px;
@@ -204,8 +199,17 @@ header >nav >a:hover{
     color:#555;
     line-height: 1.6;
     font-weight: 500;
+    opacity: 0;
 }
+#background .content:hover >img{
+    transform:translateX(0);
+    transition: .3s;
 
+}
+#background .content:hover >p{
+    opacity: 1;
+    transition: .3s;
+}
 #club{
     margin:100px 0;
 }
@@ -216,10 +220,20 @@ header >nav >a:hover{
     color:#555;
     line-height: 1.6;
     font-weight: 500;
+    opacity: 0;
 }
 #club img{
     width: 450px;
     height: 300px;margin: 15px 20px;
+    transform: translateX(200px);
+}
+#club .content:hover > img{
+    transition: .3s;
+    transform: translateX(0);
+}
+#club .content:hover >p{
+    opacity: 1;
+    transition: .3s;
 }
 #interest{
     width: 100%;
@@ -239,8 +253,8 @@ header >nav >a:hover{
     position: relative;
     border-radius: 5px;
     border:10px #fff solid;
-    width: 230px;
-    height: 230px;
+    width: 280px;
+    height: 280px;
     margin: 0 30px;
     cursor: pointer;
 }
